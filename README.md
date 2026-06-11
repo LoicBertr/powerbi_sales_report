@@ -8,14 +8,14 @@ A high-end, interactive Power BI business intelligence solution designed for glo
 
 <p align="center">
   <strong>Main Sales Performance Report</strong><br>
-  <img src="images/sales_report.png" alt="Sales Report Dashboard" width="90%">
+  <img src="sales_report.png" alt="Sales Report Dashboard" width="90%">
 </p>
 
 <br>
 
 <p align="center">
   <strong>State-Level Drill-Through Analytics Page</strong><br>
-  <img src="images/drill_through_state.png" alt="Drill Through Page" width="90%">
+  <img src="drill_through_state.png" alt="Drill Through Page" width="90%">
 </p>
 
 ---
@@ -35,7 +35,7 @@ A high-end, interactive Power BI business intelligence solution designed for glo
 The backend data architecture is built strictly on a **Star Schema design**, separating transactional fact tables from master dimension tables to maximize performance and ensure accurate filter propagation.
 
 <p align="center">
-  <img src="images/data_model.png" alt="Star Schema Data Model" width="85%">
+  <img src="data_model.png" alt="Star Schema Data Model" width="85%">
 </p>
 
 * **Fact Tables:** `fVendas`, `fMetas`, `fSatisfacao`.
