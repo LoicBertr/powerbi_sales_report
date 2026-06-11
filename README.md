@@ -39,7 +39,8 @@ The backend data architecture is built strictly on a **Star Schema design**, sep
 </p>
 
 * **Fact Tables:** `fVendas`, `fMetas`, `fSatisfacao`.
-* **Dimension Tables:** `dProdutos`, `dCategoria`, `dCanal de Vendas`, `dEstados`, `dCalendario`, `dEstoque`.
+* **Dimension Tables:** `dProdutos`, `dCategoria`, `dCanal de Vendas`, `dEstados`, `dEstoque`.
+* **Dedicated Calendar Dimension (`dCalendario`):** Implemented a standardized Date Dimension table containing custom attributes (`Ano`, `Mes`, `Dia`, `Dia nome`). This ensures high-performance Time Intelligence calculations (YTD, MoM analysis) and guarantees zero data gaps across different transactional fact models.
 
 ### 🛠️ Advanced Implementations:
 * **Context-Aware Dynamic Titles (DAX):** Developed custom measures using `SELECTEDVALUE` to dynamically update section headers depending on user filtering (e.g., automatically displaying *"Details of State - RS"* without hardcoded text blocks).
